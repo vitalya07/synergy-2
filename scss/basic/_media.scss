@@ -351,6 +351,12 @@
         }
     }
     .mainSection {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__information {
+            order: 2;
+        }
         &__title {
             font-family: 'SF Pro Black', 'sans-serif';
             font-weight: 900;
@@ -366,7 +372,12 @@
                 background-clip: text;
                 color: transparent;
             }        
-        }       
+        }    
+        &__image {
+            width: 100%;
+            height: auto;
+            order: 1;
+        }   
     }
     .footer {
         padding: 65px 25px 50px 50px;
