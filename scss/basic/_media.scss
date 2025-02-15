@@ -562,6 +562,11 @@
     .header {
         padding: 56px 0 56px 0;
     }
+    .mainSection {
+        &__link {
+            margin-bottom: 20px;
+        }
+    }
     .initalCatalog {
         margin-bottom: 100px;
         &__box {
