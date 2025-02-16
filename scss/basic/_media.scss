@@ -30,6 +30,12 @@
             }
         }
     }
+    .categories {
+        padding: 0 50px 80px 50px;
+    }
+    .allProduct {
+        padding: 0 50px 100px 50px;
+    }
 }
 @media(max-width: 1440px) {
     .container {
@@ -284,6 +290,40 @@
             }
             &-next {
                 right: -2%;
+            }
+        }
+    }
+    .categories {
+        &__title {
+            font-size: 28px;
+        } 
+        
+        &__item {
+            width: 185px;
+            height: 147px;
+            &-img {
+                height: 105px;
+            }
+            &-name {
+                font-size: 16px;
+                line-height: 45px;
+            }
+        }
+    }
+    .allProduct {
+        &__title {
+            font-size: 28px;
+        }
+        &__item {
+            width: 183px;
+            height: 289px;
+            &-img {
+                width: 146px;
+                height: 140px;
+            }
+            &-title {
+                font-size: 7px;
+                line-height: 8px;
             }
         }
     }

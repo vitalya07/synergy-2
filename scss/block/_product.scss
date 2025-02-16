@@ -23,6 +23,7 @@
         transition: transform 0.3s ease;
     }
     &__item {
+        display: block;
         width: 298px;
         height: 469px;
         box-sizing: border-box;
