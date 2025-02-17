@@ -1,8 +1,31 @@
+//hamburger
+const headerMenu = document.querySelector('.header__menu'),
+       navigation = document.querySelector('.navigation');
+headerMenu.addEventListener('click', (e)=> {
+    navigation.classList.toggle('active')
+})       
+//acardion
+const blockInformation = document.querySelectorAll('.information__block'),
+    informationItem = document.querySelectorAll('.information__item');
+
+function hiddenInformation() {
+    blockInformation.forEach(item => {
+        item.classList.remove('active')
+    })
+}
+hiddenInformation();
+function openInformation(i) {
+    blockInformation[i].classList.toggle('active');
+}
+informationItem.forEach((item, index)=> {
+    item.addEventListener('click', ()=> {
+        openInformation(index);
+    })
+})
 //sliders
 new Splide('#slider1', {
     perPage: 5,
     rewind : true,
-    // gap: 15,
     padding: '5rem',
     pagination: false,
     focus  : 'center',
@@ -128,9 +151,4 @@ new Splide('#slider3', {
     }
     
 }).mount(); 
-//hamburger
-const headerMenu = document.querySelector('.header__menu'),
-       navigation = document.querySelector('.navigation');
-headerMenu.addEventListener('click', (e)=> {
-    navigation.classList.toggle('active')
-})       
+
